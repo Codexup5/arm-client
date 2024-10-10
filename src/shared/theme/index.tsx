@@ -1,5 +1,5 @@
 import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
-import { amber, grey } from '@mui/material/colors';
+import { grey } from '@mui/material/colors';
 
 interface MuiThemeProps {
     children: React.ReactNode;
@@ -11,33 +11,29 @@ export const theme = createTheme({
             main: '#fcae06',
             contrastText: '#fff',
         },
-        secondary: {
-            main: amber[700],
-        },
         background: {
-            default: grey[100],
-            paper: grey[50],
+            default: grey[200],
+            paper: grey[100],
         },
     },
     typography: {
         fontFamily: 'Ubuntu, Arial, sans-serif',
     },
     shape: {
-        borderRadius: 16,
+        borderRadius: 12,
     },
     components: {
-        MuiButton: {
+        MuiCard: {
             styleOverrides: {
                 root: {
-                    textTransform: 'none',
                     borderRadius: 12,
                 },
             },
         },
-        MuiPaper: {
+        MuiAppBar: {
             styleOverrides: {
                 root: {
-                    boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.05)',
+                    boxShadow: 'none',
                 },
             },
         },

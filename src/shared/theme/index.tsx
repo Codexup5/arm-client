@@ -12,21 +12,32 @@ export const theme = createTheme({
             contrastText: '#fff',
         },
         background: {
-            default: grey[200],
-            paper: grey[100],
+            default: grey[100],
+            paper: grey[50],
         },
     },
     typography: {
-        fontFamily: 'Ubuntu, Arial, sans-serif',
+        fontFamily: 'Montserrat, sans-serif',
     },
     shape: {
-        borderRadius: 12,
+        borderRadius: 16,
     },
     components: {
         MuiCard: {
             styleOverrides: {
                 root: {
+                    borderRadius: 16,
+                    boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+                },
+            },
+        },
+        MuiButton: {
+            styleOverrides: {
+                root: {
                     borderRadius: 12,
+                    padding: '8px 16px',
+                    textTransform: 'none',
+                    boxShadow: '0px 3px 10px rgba(0, 0, 0, 0.05)',
                 },
             },
         },
@@ -34,6 +45,13 @@ export const theme = createTheme({
             styleOverrides: {
                 root: {
                     boxShadow: 'none',
+                },
+            },
+        },
+        MuiPaper: {
+            styleOverrides: {
+                root: {
+                    boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.05)',
                 },
             },
         },

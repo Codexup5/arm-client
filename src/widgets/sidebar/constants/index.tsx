@@ -10,6 +10,6 @@ export const Navigation = [
     {
         name: 'Сотрудники',
         icon: <GroupIcon fontSize='small' />,
-        path: '/employes',
+        path: '/employees',
     },
 ];

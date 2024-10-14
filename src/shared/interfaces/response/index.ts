@@ -13,7 +13,10 @@ export interface Pagination {
     hasPreviousPage: boolean;
     hasNextPage: boolean;
     onLimitChange?: (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
-    onPageChange?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, page: number) => void;
+    onPageChange?: (
+        event: React.MouseEvent<HTMLButtonElement, MouseEvent> | null,
+        page: number,
+    ) => void;
     setCount?: React.Dispatch<React.SetStateAction<number>>;
 }
 
